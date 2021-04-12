@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{.Params.Summary}}">
+    <title>Dan Rousseau - {{.Params.Title}}</title>
+    <base href="/">
+    <link href="css/styles.css" rel="stylesheet">
+    {{ partial "gtag.html"}}
+</head>
+
+<body>
+    <div class="w-screen h-screen overflow-auto">
+        <div class="w-full h-full flex">
+            <aside class="h-full w-1/6 flex flex-col"><a href=""
+                    class="nav-link mx-auto text-xl py-5 mt-5 text-gray-900">
+                    Home
+                </a>
+                <a href="blog" class="nav-link mx-auto text-xl py-5 mt-5 text-gray-800 active">
+                    Blog
+                </a>
+            </aside>
+
+            <main class="flex-1 flex mt-5 md:mt-24">
+                <div class="w-4/5 h-full mx-auto overflow-auto max-w-screen-md">
+                    <div class="mt-12">
+                        <div class="markdown">
+                            <h1 class="text-3xl leading-tight tracking-wide">
+                                {{.Params.Title}}
+                            </h1>
+                            {{.Content}}
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

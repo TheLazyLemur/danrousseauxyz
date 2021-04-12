@@ -1,0 +1,6 @@
+User-agent: *
+
+Allow: /
+{{ range where .Site.RegularPages "Type" "blog" }}
+Allow: https://danrousseau.xyz{{.RelPermalink}}
+{{end}}
