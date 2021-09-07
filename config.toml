@@ -1,4 +1,22 @@
 baseURL = "https://danrousseau.xyz/"
-languageCode = "en-us"
 title = "Dan Rousseau"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+enableEmoji = true
+enableGitInfo = true
+canonifyURLs = true
 enableRobotsTXT = true
+
+[params]
+  author = "Dan Rousseau"
+  github = "https://github.com/TheLazyLemur"
+  og_image = "/img/og.png"
+  sitename = "Dan Rousseau"
+  twitter = "@LemurZA"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
