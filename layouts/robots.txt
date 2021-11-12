@@ -1,6 +1,8 @@
 User-agent: *
 
 Allow: /
+Allow: /cv
+Allow: /blog
 {{ range where .Site.RegularPages "Type" "blog" }}
 Allow: {{.RelPermalink}}
 {{end}}
